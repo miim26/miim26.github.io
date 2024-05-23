@@ -3,33 +3,107 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Glavna stranica</title>
     <style>
-        div{
-            margin: 10px;
-            width:30px;
-            height: 30px;
-            background-color: rgb(113, 108, 108);
+        @font-face {
+            font-family: mojfont;
+            src: url(./naslov.ttf);
+        }
+        td{
+            width: 30%;
+            height: 50px;
+            border: dotted blue 2px;
+            text-align: center;
+            border-radius: 50%;
+            padding: 10px;
+            background-color: rgb(108, 207, 224);
+            font-family: mojfont;
+            color: rgb(206, 206, 217);
+
+        }
+        a{
+            text-decoration: none;
+            color: rgb(26, 26, 145);
+        }
+        td:hover{
+            background-color: transparent;
+            font-size: larger;
+        }
+        body{
+            background-image: url(pozadina2.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100vh;
+            padding: 0;
+            margin: 0;
+        }
+        table{
+            margin: auto;
+            /* margin-top: 25vh; */
+            width: 60%;
+            height: 15vh;
+            empty-cells: hide;
+            position: absolute;
+            left: 22%;
         }
 
-        p {
-            width: 50%;
-            margin: auto;
-            border: solid purple 5px;
-            padding: 10px;
+        #t1 {
+            top: 40vh;
         }
+        #t2 {
+            top: 55vh;
+            width: 40%;
+            left: 32%;
+        }
+        h1{
+            font-family: mojfont;
+            color: rgb(108, 207, 224);
+            position: relative;
+            /* left: 43%; */
+            margin: auto;
+            width: 95%;
+            text-align: center;
+            padding: 0;
+            margin-top: 13%;
+            font-size: 4em;
+        }
+        h2{
+            font-family: 'Times New Roman', Times, serif;
+            color: rgb(252, 249, 249);
+            position: fixed;
+            bottom: 16%;
+            right: 12%;
+        }
+
+        body {
+            width: 100vw;
+        }
+
     </style>
 </head>
 <body>
-    <h1>Neki naslov</h1>
-    <p>Lorem ipsum dolor
+    <div>
+        <h1>
+            Moja stranica
+        </h1>
+    </div>
+    <table id="t1">
+        <tr>
+            <td><a href="./galerija.html">Galerija</a></td>
+            <td><a href="./indexM.html">Bajka</a></td>
+            <td><a href="./indexM2.html">Kockice</a></td>
+        </tr>
         
-        
-        <br>
-        
-        sit, amet consectetur adipisicing elit. Nostrum iste vero modi, quos praesentium sed accusantium eius, a sit ipsa iure suscipit numquam, nihil consequatur ipsam veniam inventore! Numquam, soluta!</p>
-    <div></div>
-    <div></div>
-    <div></div>
+    </table>
+    <table id="t2">
+        <tr>
+        <td><a href="./indexM3.html">Loggin</a></td>
+        <td><a href="./indexM4.html">Zalazak sunca</a></td>
+        </tr>
+    </table>
+    <div>
+        <h2>
+            Milica Stojkovic
+        </h2>
+    </div>
 </body>
 </html>

@@ -3,56 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Galerija</title>
     <style>
-        #a, .b, .c, .d {
-            width: 300px;
-            height: 300px;
-            padding: 50%;
+        #a, .b, .c, .d, .e, .f, .g {
+            width: 100%;
+            height: 100%;
+            /* padding: 50%;  */
+            /*kako da bude preko
+             celog ekrana tacno slika? */
             position: absolute;
-            top: 0;
+            top: 0; 
             background-size: 100% 100%;
-
         }
 
         #a {
             background-color: rgb(217, 140, 140);
             top: 0;
-            background-image: url(basta.jpg);
-
-        
+            background-image: url(w9.avif);
         }
-        .b {
+        .b{
             background-color: rgb(48, 112, 48);
-            /* ovo se korisit za pozicionirnje */
+            /* ovo se koristi za pozicionirnje */
             /* position: relative; */
             /* bottom: 100px; */
             /* left: 100px; */
             top: 0;
             left: 50px;
-            background-image: url(cvet.jpeg);
+            background-image: url(w5.jpg);
         }
         .c{
             background-color: rgb(84, 180, 209);
             left: 100px;
-            background-image: url(drvo.jpg);
+            background-image: url(w8.jpg);
         }
-        .d {
+        .d{
             background-color: rgb(255, 202, 127);
-            left: 150px;
-            background-image: url(jezero.jpeg); height:1    ;
+            left: 150px; 
+            background-image: url(w4.jpg);
         }
-
-        .hov:hover  {
+        .e{
+            background-color: rgb(136, 48, 219);
+            left: 200px;
+            background-image: url(w7.avif);
+        }
+        .f{
+            background-color: rgb(78, 78, 244);
+            left: 250px;
+            background-image: url(w1.jpg);
+        }
+        .g{
+            background-color: rgb(16, 14, 14);
+            left: 300px;
+            background-image: url(w2.png);
+        }
+        .hov:hover{
             z-index: 1;
             background-color: pink;
         }
-
-        main {
-
-            position: relative;
-            height: 150px;
-        }
+  
     </style>
 </head>
 <body>
@@ -61,16 +69,10 @@
         <div class="b hov"></div>
         <div class="c hov"></div>
         <div class="d hov"></div>
+        <div class="e hov"></div>
+        <div class="f hov"></div>
+        <div class="g hov"></div>
     </main>
-
-<table>
-{
-
-}
-
-
-</table>
-    
 
 </body>
 </html>
